@@ -1,0 +1,26 @@
+COMP3760 Lab2 Scratch
+
+Algorithm in pseudo-code:
+```
+ALGORITHM generatePalindromeSequences(N):
+	if N == 1:
+		// Base case is the first odd
+		return {'A','B','C'}
+	else if (N % 2 == 0):
+		arr_t = generatePalindromeSequence(N-1)
+		arr_n = {}
+		for string in arr_t:
+			// Some nice string slicing syntax
+			// Is this illegal in pseudo code
+			arr_n.append(string[:len(str)/2] +  string[len(str)/2] + string[len(str)/2:])
+		return arr_n
+	else:
+		arr_t = generatePalindromeSequence(N-2)
+		arr_n = {}
+		// For 'A', 'B', 'C'
+		for string in arr_t:
+			arr_n.append('A' + string + 'A')
+			arr_n.append('B' + string + 'B')
+			arr_n.append('C' + string + 'C')
+		return arr_n
+```
