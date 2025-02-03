@@ -1,6 +1,18 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 
+// Name: Will Otterbein
+// Number: A01372608 
+// Set: D
+
+/**
+ * Determines the palindromes containing 'A', 'B', 'C' of a given length N.
+ * 
+ * Contains donut version solution in the method `generatePalindromeSequencesVariableColors`:
+ * - Variable list of colors/characters.
+ * - Logic remains the same, code just needs to be adjusted to work with a variable list instead of a fixed one.
+ * - Helper method to generate list of colors/characters `returnBasePalindromeListForVariableColors`.
+ */
 public class Lab2
 {
     /**
